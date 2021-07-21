@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>交互栏</title>
+    <style>
+        .ul1 {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #fff;
+            white-space: nowrap;
+        }
+        .ul1 li {
+            width: 20%;
+            height: 49px;
+            float: left;
+            border-bottom:1px dashed rgb(53, 82, 134);
+            text-align: center;
+        }
+        .ul1 li a {
+            display: inline-block;
+            color: rgb(53, 82, 134);
+            padding: 14px 16px;
+            text-decoration: none;
+            
+        }
+        .ul1 li a:hover {
+            color: #333;
+        }
+        .ul1 li:hover {
+            border-bottom:1px solid #333;
+        }
+        .ul2 {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #fff;
+            white-space: nowrap;
+            display: inline;
+        }
+        .ul2 li {
+            width: 100%;
+            color: #333;
+            padding: 27px 16px;
+            border-bottom:1px solid #333;
+            text-align: left;
+            cursor: pointer;
+        }
+        .a1{
+            float:right;
+            padding-right: 60px ;
+        }
+        .ul2 li a {
+            text-decoration: none;
+            
+        }
+        .ul2 li:hover{
+            background-image: linear-gradient(45deg,rgba(115, 112, 250, 0.25) 70%,transparent 0,transparent 30%,rgba(0,0,0,.25) 0),linear-gradient(45deg,rgba(0,0,0,.25) 50%,transparent 0,transparent 50%,rgba(0,0,0,.25) 0);
+            background-color: #eee;
+        }
+        .ul2 li:hover .a1{
+            color: #fff;
+        }
+        #content1,#content2,#content3,#content4,#content5{   
+            display:none;   
+        }  
+        #content1:target,   
+        #content2:target,
+        #content3:target,
+        #content4:target,
+        #content5:target{   
+            display:block;   
+        }
+    </style>
+</head>
+<body>
+    <ul class="ul1">
+        <li><a href="#content1">最新</a></li>
+        <li><a href="#content2">新闻</a></li>
+        <li><a href="#content3">公告</a></li>
+        <li><a href="#content4">活动</a></li>
+        <li><a href="#content5">攻略</a></li>
+    </ul>
+    <ul class="ul2" id="content1">
+        <li><a>【公告】上海市徐汇警方侦破《万国觉醒》游戏外挂案，跨省抓获两名嫌犯</a><a class="a1">2021-03-09</a></li>
+        <li><a>【新闻】邓紫棋《万国觉醒》同名MV震撼上线</a><a class="a1">2020-11-27</a></li>
+    </ul>
+    <ul class="ul2" id="content2">
+        <li><a>【新闻】邓紫棋《万国觉醒》同名MV震撼上线</a><a class="a1">2020-11-27</a></li>
+        <li><a>【新闻】《万国觉醒》斗鱼战地记者团招募第一期正式开启</a><a class="a1">2020-11-06</a></li>
+    </ul>
+    <ul class="ul2" id="content3">
+        <li><a>【公告】上海市徐汇警方侦破《万国觉醒》游戏外挂案，跨省抓获两名嫌犯</a><a class="a1">2021-03-09</a></li>
+        <li><a>【公告】【11月16日更新】《万国觉醒》违规账号处罚公告</a><a class="a1">2020-11-16</a></li>
+    </ul>
+    <ul class="ul2" id="content4">
+        <li><a>【活动】《万国觉醒》线下活动</a><a class="a1">2020-11-10</a></li>
+        <li><a>【活动】《万国觉醒》冬季活动</a><a class="a1">2020-11-06</a></li>
+    </ul>
+    <ul class="ul2" id="content5">
+        <li><a>【攻略】《万国觉醒》快速度过新手期</a><a class="a1">2020-11-26</a></li>
+        <li><a>【攻略】《万国觉醒》攻略</a><a class="a1">2020-11-16</a></li>
+    </ul>
+</body>
+</html>
